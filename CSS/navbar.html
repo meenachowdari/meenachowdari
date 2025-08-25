@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color:#2e0000;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+        .navbar ul{
+            padding: 0px;
+        }
+       .navbar li{
+        color: white;
+        list-style-type: none;
+        float: left;
+        padding: 10px;
+        cursor: pointer;
+       }
+       .navbar li:hover{
+        background-color: green;
+       }
+       .form-container{
+        width:200px;
+        border: 1px solid black;
+        padding:10px;
+        display: none;
+       }
+       button{
+        background-color: dodgerblue;
+        color:white;
+        width: 85%;
+        padding:5px;
+        border-radius: 3px;
+        border:none;
+       }
+       button:hover{
+        background-color: #bebcbc;
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+        <ul>
+            <li onclick="showform('SignupForm')">Signup</li>
+            <li onclick="showform('LoginForm')">Login</li>
+        </ul>
+    </div><br><br>
+    <!--Signup form-->
+    <center>
+    <div id="SignupForm" class="form-container">
+        <h2>Sign up</h2>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <input type="password" placeholder="Enter password"><br><br>
+        <input type="email" placeholder="Enter your Email"><br><br>
+        <button id="demo" onclick="func()">Signup</button>
+    </div>
+    </center>
+     <!--Login form-->
+     <center>
+     <div id="LoginForm" class="form-container">
+        <h2>Login form</h2>
+        <input type="text" placeholder="Enter username"><br><br>
+        <input type="password" placeholder="Enter password"><br><br>
+        <button id="dmo" onclick="func()">Login</button>
+    </div>
+    </center>
+    <!-- defining javascript-->
+     <script>
+        function showform(formid){
+            //hide all the open files 
+            document.querySelectorAll('.form-container').forEach(form => {form.style.display = 'none'});
+            //open specified files
+            document.getElementById(formid).style.display = 'block';
+        }
+        function func(){
+            document.getElementById("demo").innerHTML = "You have successfull submitted";
+            document.getElementById("dmo").innerHTML = "You have successfull submitted";
+        }
+     </script>
+</body>
+</html>
