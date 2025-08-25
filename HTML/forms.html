@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        a:focus{
+           outline: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="">
+    <center>
+   <table style="width: 500px;">
+    <caption><h3><center>STUDENT REGISTRATION FORM</center></h3></caption>
+    <tr>
+       <td colspan="2">&nbsp;</td> 
+       <td align="right">
+        <input type="image" src="Pink_flower.jpg" height="100" width="80px">
+</td>   
+    </tr>
+    <tr>
+        <td>
+            <label>Full Name</label>
+        </td>
+        <td><b>:</b></td>
+        <td>
+            <input type="text" name="name" required>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>Phone number</label>
+        </td>
+        <td><b>:</b></td>
+        <td>
+            <input type="number" name="number" maxlength="10" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Password</label>
+        </td>
+        <td><b>:</b></td>
+        <td>
+            <input type="password" name="password" required>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            <label>Email</label>
+        </td>
+        <td><b>:</b></td>
+        <td>
+            <input type="email" name="email" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>DOB</label>
+        </td>
+        <td><b>:</b></td>
+        <td>
+            <input type="date" name="dob" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Gender</label>
+        </td>
+        <td><b>:</b></td>
+        <td>
+            <fieldset>
+                <legend>Gender</legend>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Other">Other<br>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>:</td>
+        <td>
+        <select>
+            <option>General</option>
+            <option>OBC</option>
+            <option>SC/ST</option>
+            <option>Other</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Course applying for</td>
+        <td>:</td>
+        <td>
+            <select>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>CSIT</option>
+            </select>
+        </td>
+    </tr>
+     <tr>
+    <td>
+        <label>Qualification</label>
+    </td>
+    <td><b>:</b></td>
+    <td>
+        <fieldset>
+            <legend>Academic Information</legend><br>
+
+            <label for="school">School/College Name:</label><br>
+            <input type="text" id="school" name="school" required>
+            <br><br>    
+
+            <label for="percentage">Percentage:</label><br>
+            <input type="text" id="percentage" name="percentage" required>
+            <br><br>
+
+            <label for="board">Board/University:</label><br>
+            <input type="text" id="board" name="board" required>
+            <br><br>
+
+            <label for="percentage">Percentage/CGPA:</label><br>
+            <input type="text" id="percentage" name="percentage" required>
+        </fieldset>
+    </td>
+</tr>
+    <tr>
+        <td>Upload certificates</td>
+        <td>:</td>
+        <td><input type="file" name="file"></td>
+    </tr>
+    <tr>
+        <td>
+            Nationality
+        </td>
+        <td>:</td>
+        <td>
+            <input type="checkbox" name="Nationality">Indian
+            <input type="checkbox" name="Nationality">Other
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <label>Address</label>
+        </td>
+        <td>:</td>
+        <td><textarea  id="comments" name="comments" rows="4" cols="50"></textarea></td>
+    </tr>
+    <tr>
+        
+        <td>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </td>
+        
+    </tr>
+    
+   </table>
+    </center>
+    </form>
+    <a href="http:www.google.com">Click here</a>
+</body>
+</html>
